@@ -108,7 +108,7 @@ const answer = reverseString('hello')
 
 
 /*
-#. Triangular Number
+4. Triangular Number
 Q: What is the input to the program?
 A: The number passed into the triangularNumber function when it is first invoked
 
