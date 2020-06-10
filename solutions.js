@@ -135,3 +135,53 @@ const answer = triangularNumber(9)
 
 
 
+
+
+let arr = [1, 1];
+
+function fibonacci(num) {
+  if(arr.length === num) {
+    return arr;
+  }
+
+  let sum = arr[arr.length - 2] + arr[arr.length - 1];
+  arr.push(sum);
+  return fibonacci(num);
+}
+
+const result = fibonacci(7);
+console.log(result);
+
+
+
+
+
+/*
+6. Fibonacci
+Q: What is the input to the program?
+A: The number passed into the fibonacci sequence, which indicates at which point the fibonacci sequence should terminate
+
+Q: What is the output of the program?
+A: An array with all of the numbers of the fibonacci sequence
+
+Q: What is the input to each recursive call?
+A: The number that indicates at which point in the fibonacci sequence to stop
+
+Q: What is the output of each recursive call?
+A: An array that contains all of the numbers that have been generated so far since the function started generating the numbers of the fibonacci sequence
+*/
+
+let arr = [1, 1];
+
+function fibonacci(num) {
+  if(arr.length === num) {
+    return arr;
+  }
+
+  let sum = arr[arr.length - 2] + arr[arr.length - 1];
+  arr.push(sum);
+  return fibonacci(num);
+}
+
+const result = fibonacci(7);
+
