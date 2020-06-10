@@ -185,3 +185,31 @@ function fibonacci(num) {
 
 const result = fibonacci(7);
 
+/*
+7. Factorial
+Q: What is the input to the program?
+A: The number passed into the factorial function
+
+Q: What is the output of the program?
+A: the product of the initial argument passed into the function multiplied by each number between itself and 1.
+
+Q: What is the input to each recursive call?
+A: The number that is 1 less than the preceding number passed into the function. 
+
+Q: What is the output of each recursive call?
+A: The product of the multiplication process so far
+*/
+
+
+const factorial = function(num){
+  if(num === 1){
+    return num 
+  }
+  
+  return num*(factorial(num-1))
+}
+
+const result = factorial(6)
+console.log(result)
+
+
